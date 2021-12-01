@@ -1,13 +1,19 @@
 import React from "react";
 import GlobalStyle from "./globalStyles";
 import Navbar from "./Components/Navbar/Navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from './pages/HomePage/Home'
+import { BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route } from "react-router"
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
       <Navbar />
+   
+      <Routes>
+        <Route path="/Products" component={Home} />
+      </Routes>
     </Router>
   );
 }

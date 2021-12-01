@@ -31,12 +31,11 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    showButton()
-  }, [])
+    showButton();
+  }, []);
 
-  window.addEventListener('resize', showButton)
-  
- 
+  window.addEventListener("resize", showButton);
+
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
       <Nav>
